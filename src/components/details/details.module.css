@@ -1,0 +1,145 @@
+.countryDetailsContainer{
+  width: 100%;
+  max-width: 1024px;
+  margin-bottom: 64px;
+}
+
+.navContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 64px 0;
+}
+
+.navButton {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px 24px;
+  border-radius: 4px;
+}
+
+.navButton i{
+  transition: all 0.2s ease-in-out;
+}
+
+.navButton:hover i{
+  transform: translate(-4px, 0);
+}
+
+.detailsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  display: block;
+  width: 100%;
+  max-width: 47%;
+}
+
+.detailsContainer {
+  width: 100%;
+  max-width: 47%;
+}
+
+.detailsNameContainer {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.dataSection{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.borderContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.borderItem{
+  display: inline-block;
+  padding: 2px 24px;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.item{
+  padding: 0 4px;
+  display: inline-block;
+}
+
+.data{
+  width: 50%;
+}
+
+.data p{
+  margin-bottom: 10px;
+}
+
+.data span{
+  font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+  .countryDetailsContainer{
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .countryDetailsContainer{
+    max-width: 575px;
+  }
+  .detailsWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 48px;
+  }
+  
+  .detailsContainer {
+    max-width: 100%;
+  }
+
+  .navContainer{
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .dataSection{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }  
+  .data{
+    width: 100%;
+  }
+
+  .data:last-child{
+    margin-top: 32px;
+  }
+}
+
+

@@ -1,0 +1,28 @@
+.searchBoxContainer {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.searchInput{
+  flex: 1 0 auto;
+  padding: 10px 0;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+}
+
+.searchInput:focus{
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .searchBoxContainer {
+    max-width: 100%;
+    margin-bottom: 24px;
+  } 
+}
+

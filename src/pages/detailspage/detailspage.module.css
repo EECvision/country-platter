@@ -1,0 +1,16 @@
+.detailsContainer{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .detailsContainer{
+    padding: 32px;
+  }
+}

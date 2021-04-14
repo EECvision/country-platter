@@ -1,0 +1,35 @@
+.directoryMenuContainer{
+  width: 100%;
+  max-width: 1024px;
+  margin-bottom: 64px;
+}
+
+
+.searchAndFilterContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 36px auto;
+}
+
+@media screen and (max-width: 1024px){
+  .directoryMenuContainer{
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .directoryMenuContainer{
+    max-width: 575px;
+  }
+  .searchAndFilterContainer{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+
+}
+
+

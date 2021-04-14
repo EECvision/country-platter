@@ -1,0 +1,57 @@
+.headerWrapper{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 24px;
+  cursor: default;
+  font-size: calc(10px + 1vmin);
+  z-index: 5;
+}
+
+.headerContainer{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer{
+  width: auto;
+  font-weight: bold;
+}
+
+.darkmodeContainer{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkmodeIconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .headerContainer{
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer{
+    max-width: 575px;
+  }
+}
+

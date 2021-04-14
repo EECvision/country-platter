@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import HomePage from './pages/home/homepage.component';
+import { useContext, useEffect} from 'react';
+import { ThemeContext } from './states/theme/theme.context';
+import { Route, Switch } from 'react-router-dom';
+import Header from './components/header/header.component';
+import DetailsPage from './pages/detailspage/detailspage.component';
+import axios from 'axios';
+import { CountryContext } from './states/country/country.context';
+
 
 function App() {
+  const {backgroundColor} = useContext(ThemeContext);
+  document.body.style.background = backgroundColor;
+  const {dispatch} = useContext(CountryContext);
+
+  useEffect(() => {
+    async function getCountries() {
+      try {
+        let { data } = await axios.get("https://restcountries.eu/rest/v2/all");
+        dispatch({type: 'SET_COUNTRIES', payload: data})
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+    getCountries()
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.appContainer}>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/details/:countryId'  component={DetailsPage} />
+      </Switch>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.footerWrapper{
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer{
+  width: 100%;
+  max-width: 1024px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer{
+    text-align: center;
+  }
+}
