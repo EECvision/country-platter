@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [REST Country Api](https://your-live-site-url.com)
+- Live Site URL: [REST Country Api](https://country-platter.vercel.app/)
 
 ## My process
 
