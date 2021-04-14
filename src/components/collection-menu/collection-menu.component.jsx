@@ -8,7 +8,7 @@ function CollectionMenu({countries}) {
     <div className={styles.collectionMenuContainer}>
       {
         countries
-        .filter((_,idx)=> idx < 20)
+        // .filter((_,idx)=> idx < 20)
         .map((country,idx) => (
           <CollectionItem key={idx} {...country}/>
         ))
