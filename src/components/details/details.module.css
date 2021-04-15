@@ -1,6 +1,6 @@
 .countryDetailsContainer{
   width: 100%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin-bottom: 64px;
 }
 
@@ -94,18 +94,7 @@
 }
 
 
-
-
-@media screen and (max-width: 1024px){
-  .countryDetailsContainer{
-    max-width: 768px;
-  }
-}
-
 @media screen and (max-width: 768px){
-  .countryDetailsContainer{
-    max-width: 575px;
-  }
   .detailsWrapper {
     flex-direction: column;
     align-items: center;

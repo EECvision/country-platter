@@ -8,16 +8,22 @@ import { useContext } from 'react';
 
 function DirectoryMenu() {
   const { filterValue } = useContext(SearchContext);
-  const { countries} = useContext(CountryContext);
+  const { countries } = useContext(CountryContext);
 
   const regex = new RegExp(filterValue.toLowerCase());
   const countriesToDisplay = () => {
     if (countries) {
-      if (!filterValue) return countries
-      return countries
-        .filter(country =>
-          country.region === filterValue || regex.test(country.name.toLowerCase())
-        )
+      if (!filterValue) {
+        return countries
+          .filter(country =>
+            country.region === 'Africa'
+          )
+      } else {
+        return countries
+          .filter(country =>
+            country.region === filterValue || regex.test(country.name.toLowerCase())
+          )
+      }
     }
   }
 

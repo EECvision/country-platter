@@ -1,9 +1,12 @@
 .directoryMenuContainer{
   width: 100%;
-  max-width: 1024px;
   margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 4rem;
 }
-
 
 .searchAndFilterContainer{
   width: 100%;
@@ -13,16 +16,7 @@
   margin: 36px auto;
 }
 
-@media screen and (max-width: 1024px){
-  .directoryMenuContainer{
-    max-width: 768px;
-  }
-}
-
 @media screen and (max-width: 768px){
-  .directoryMenuContainer{
-    max-width: 575px;
-  }
   .searchAndFilterContainer{
     flex-direction: column;
     align-items: flex-start;
@@ -30,6 +24,12 @@
     margin-top: 32px;
   }
 
+}
+
+@media screen and (max-width: 425px) {
+  .directoryMenuContainer{
+    padding: 0 2rem;
+  }
 }
 
 

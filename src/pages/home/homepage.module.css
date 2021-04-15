@@ -2,15 +2,12 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 1440px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-top: 70px;
 }
 
-@media screen and (max-width: 768px) {
-  .homepageContainer{
-    padding: 0 32px;
-  }
-}
+

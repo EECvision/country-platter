@@ -2,23 +2,22 @@
   width: 100%;
   display: grid;
   grid-template-columns:  repeat(4, 1fr);
-  gap: 48px;
+  gap: 32px;
 }
 
 @media screen and (max-width: 1024px) {
   .collectionMenuContainer {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
   .collectionMenuContainer {
-    grid-template-columns: auto auto;
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 565px) {
   .collectionMenuContainer {
     grid-template-columns: auto;
     justify-content: center;

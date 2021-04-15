@@ -2,7 +2,7 @@ import searchActionTypes from './search.types';
 
 export const INITIAL_STATE = {
   isFilter: false,
-  filterValue: ''
+  filterValue: 'Africa'
 }
 
 export const searchReducer = (state = INITIAL_STATE, action)=>{

@@ -5,15 +5,14 @@ import styles from './collection-menu.module.css';
 function CollectionMenu({countries}) {
 
   return (
-    <div className={styles.collectionMenuContainer}>
+    <article className={styles.collectionMenuContainer}>
       {
         countries
-        // .filter((_,idx)=> idx < 20)
         .map((country,idx) => (
           <CollectionItem key={idx} {...country}/>
         ))
       }
-    </div>
+    </article>
   )
 }
 

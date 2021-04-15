@@ -22,7 +22,7 @@ function SearchBox() {
 
   const handleChange = e => { 
     setValue(e.target.value) 
-    dispatch(setFilter(searchValue))
+    dispatch(setFilter(e.target.value))
   }
 
   return (

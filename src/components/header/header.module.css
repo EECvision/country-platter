@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;  
-  padding: 24px;
+  padding: 1.5rem 4rem;
   cursor: default;
   font-size: calc(10px + 1vmin);
   z-index: 5;
@@ -13,7 +14,6 @@
 
 .headerContainer{
   width: 100%;
-  max-width: 1024px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,16 +42,9 @@
 }
 
 
-
-@media screen and (max-width: 1024px) {
-  .headerContainer{
-    max-width: 768px;
+@media screen and (max-width: 425px) {
+  .headerWrapper{
+    padding: 1.5rem 2rem;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .headerContainer{
-    max-width: 575px;
-  }
-}
+} 
 
