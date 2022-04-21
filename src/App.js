@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     async function getCountries() {
       try {
-        let { data } = await axios.get("https://restcountries.eu/rest/v2/all");
+        let { data } = await axios.get("https://restcountries.com/v3.1/all");
         dispatch({type: 'SET_COUNTRIES', payload: data})
       } catch (error) {
         console.log(error.message)
